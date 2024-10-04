@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  background: linear-gradient(to bottom, black, transparent, black), url(9105809.jpg);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.cursor {
+  height: 4vh;
+  width: 4vh;
+  background-color: #a8c7dd;
+  position: fixed;
+  z-index: 99;
+  border-radius: 50%;
+}
+
+.cursorblur {
+  height: 15vh;
+  width: 15vh;
+  background-color: #6f8695;
+  position: fixed;
+  filter: blur(50px);
+  border-radius: 50%;
+  z-index: 9;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 75vh;
+  width: 80vh;
+  text-align: center;
+  border-radius: 3vh;
+  box-shadow: 0 0 15px 5px rgba(158, 158, 158, 0.6);
+}
+
+.login h1 {
+  margin: 2vh;
+  font-size: 7vh;
+  text-shadow: 0 0.4vh #485760;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.25); 
+  margin: 1vh;
+}
+
+.usernameu, .passwordi {
+  margin-top: 3vh;
+  height: 6vh;
+  width: 70vh;
+  border-radius: 3vh;
+  text-align: left;
+  border: 1px solid #485760;
+  color: rgb(221, 217, 217); 
+  background-color: transparent;
+}
+.passwordi::placeholder {
+  border: 1px solid #485760;
+  border-radius: 3vh;
+}
+
+.usernameu::placeholder, .passwordi::placeholder {
+  font-size: 2.7vh;
+  text-align: left;
+  padding: 1vh 4vh;
+  color: rgb(223, 220, 220);
+
+
+}
+
+.usernameu input:active {
+  outline: none;
+  border: 2px solid #485760;
+}
+
+
+.usernameu:focus::placeholder, .passwordi:focus::placeholder {
+  color: rgb(212, 212, 212); 
+  padding: 1vh 4vh;
+}
+input:focus {
+  outline: none;
+}
+
+.passwordi {
+  margin: 3vh;
+  height: 6vh;
+  width: 70vh;
+  border-radius: 3vh;
+  border: none;
+}
+
+.loginb button {
+  height: 6vh;
+  width: 20vh;
+  background-color: transparent;
+  border: 2px solid rgb(7, 124, 241);
+  color: rgb(6, 117, 227);
+  border-radius: 2vh;
+  font-size: 3vh;
+  cursor: pointer;
+  margin: 2vh 2vh 2vh 0;
+  transition: 0.35s ease-in-out;
+ 
+}
+
+.loginb button:hover {
+  background-color: rgb(8, 102, 197);
+  border: none;
+  color: white;
+  height: 6vh;
+  width: 30vh;
+}
+
+.loginb button:active {
+  background-color: white;
+  color: #485760;
+}
+.fpassword {
+  margin: 2vh;
+  font-size: 3vh;
+}
+
+.fpassword a {
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.rememberme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-left: 6vh;
+}
+.rememberme p {
+  margin-left: 2vh;
+}
+
+.icons {
+  height: 10vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.loginusing {
+  font-size: 3vh;
+}
+.rememberme {
+  font-size: 3vh;
+}
+.icons img {
+  height: 6vh;
+  margin: 0 1vh;
+}
+
+.icons img:hover {
+  border: 2px solid #3484ba;
+  border-radius: 50%;
+}
+
+.createAcc button:hover {
+  background-color: rgb(1, 76, 1);
+}
+
+.fpassword a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 780px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    width: 60vh;
+  }
+  .usernameu {
+    height: 6vh;
+    width: 55vh;
+    border-radius: 1vh;
+  }
+  .passwordi {
+    height: 6vh;
+    width: 55vh;
+    border-radius: 1vh;
+  }
+  .loginb button {
+    width: 25vh;
+    height: 5vh;
+    border-radius: 1vh;
+    font-size: 3vh;
+  }
+  .createAcc {
+    width: 15vh;
+    height: 5vh;
+  }
+  .hr hr {
+    width: 50vh;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container {
+    width: 40vh;
+  }
+  .usernameu {
+    height: 5vh;
+    width: 35vh;
+    border-radius: 1vh;
+    font-size: 1vh;
+  }
+  .passwordi {
+    height: 5vh;
+    width: 35vh;
+    font-size: 1vh;
+    border-radius: 1vh;
+  }
+  .loginb button {
+    width: 25vh;
+    height: 5vh;
+    border-radius: 1vh;
+    font-size: 3vh;
+  }
+  .createAcc {
+    width: 15vh;
+    height: 5vh;
+  }
+  .hr hr {
+    width: 30vh;
+  }
+}
+
